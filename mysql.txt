@@ -39,3 +39,9 @@ after
 
 修改表名字
 	alter table 原表名 rename 新的名字
+
+表插入数据
+	insert into  test values(1,'王宝强'，111,1)；
+	insert into  test test(name,price,sex) values(....)
+显示表格
+	select * from test 
