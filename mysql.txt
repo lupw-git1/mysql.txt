@@ -45,3 +45,5 @@ after
 	insert into  test test(name,price,sex) values(....)
 œ‘ æ±Ì∏Ò
 	select * from test 
+
+11
