@@ -14,7 +14,7 @@
 	mysqli_fetch_array($result)返回一个有索引又有关联的数组	
 	mysqli_affected_rows($link)返回你的修改，删除，添加的时候受影响的行数
 	mysqli_num_rows($resule)返回查询时候的结果集的总条数；
-	mysqli_insert_id($link);返回的是你插入的当前的数据的自增的ID；
+	mysqli_insert_id($link);返回的是，你插入的当前的数据的自增的ID；
 	
 	str_shuffle()打乱字符串
 	shuffle()打乱数组
@@ -31,7 +31,50 @@
 	gd库
 	1.创建画布$im = @imagecreatetruecolor(120, 20)
 	2.创建颜色$text_color = imagecolorallocate($im, 233, 14, 91);//0-255值越小颜色越深
-	3.用gd库函数去画画
+	3.用gd库函数去画画，
 	4.告诉浏览器你的minme类型
 	5.输出到浏览器或者可以存放到你的本地
 	6.销毁资源
+
+文件操作
+	http_build_query()将数组变成URL后面参数
+	
+	pathinfo()
+	basename()
+	dirname()
+	$a=fopen('','r+') a模式可以添加，不会覆盖
+	$str=''
+	fwrite($a,$str)
+	fclose($a)
+	fseek($a,0)将指针移动到最前面
+	fread($a,3)读取文档中第三个字符
+	readfile() 
+	is_uploaded_file[]判断是否为上传文件 
+
+	unlink()删除文件
+	rmdir()删除文件夹
+	file_put_contensts(文件名，内容) 覆盖原有，新建没有
+	file_exists()是否存在
+	is_file 是否是个文件
+	is_dir是否是个文件夹
+	is_writeable是否可写
+	is_readable是否可读
+	is_executable是否可执行
+	chmod()改变权限
+	readdir()
+	mkdir(test/a/b/c，0777，true)创建文件夹
+	opendir()返回一个资源
+	closedir()
+	
+	copy(a,b)
+	rename(a,b)
+	parse_url()解析路径
+	parse_str()将字符串解析成变量
+	in_array() 在不在数组中
+	uniqid() 随机
+	
+
+	$_FILES[]查看上传图片
+
+正则
+	
