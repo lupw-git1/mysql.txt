@@ -1,0 +1,70 @@
+
+mysql -uroot -p
+123
+show databases;
+
+use bbs; 
+
+show tables;
+
+创建表
+
+create table 表名（ID int，name varchar（35），price int ）；
+
+删除表
+
+drop table 表名字；
+
+查看建库语句
+
+show create table 表名字 
+
+修改表字段值
+
+alter table 表名 modify 字段名字 修改后的值；
+
+修改表字段
+
+alter table 表名 change 原来字段名 修改后字段名字 
+
+删除表字段
+
+alter table 表名 drop 表段名字
+
+插入顺序的问题
+
+first
+	alter table 表名 add 你要添加的字段 first
+after
+	alter table 表名 add 你要添加的字段名字after（在谁后面）
+
+修改表名字
+	alter table 原表名 rename 新的名字
+
+表插入数据
+	insert into  test values(1,'王宝强'，111,1)；
+	insert into  test(name,price,sex) values(....)
+显示表格
+	select * from  test where bettwen/and/in/or/!/like '%字符%'-模糊查询/order by age desc(默认升序)/limit
+
+删除数据
+	delete from test where bettwen/and/in()/or/! id=''
+去除重复
+	select distinct address from tesst///select * from test group by address (以地址分组)
+
+更新数据
+	update test set name='' where id='';
+
+内联
+	select 表1.字段[as 别名]，表n.字段 from 表1 inner join 表2 on 条件；
+	select usernanme ,name from shop_user inner join shop_goods on shop_user.gid=shop_goods.gid 表
+
+左链接
+	以左表为基准
+	select 表1.字段[as 别名]，表n.字段 from 表1 left join 表2 on 条件；
+	select usernanme ,name from shop_user left join shop_goods on shop_user.gid=shop_goods.gid 表
+右链接
+
+	select 表1.字段[as 别名]，表n.字段 from 表1 right join 表2 on 条件；
+	select usernanme ,name from shop_user right shop_goods on shop_user.gid=shop_goods.gid 表
+	

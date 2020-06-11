@@ -1,0 +1,37 @@
+<?php
+	1.链接数据库
+	2.判断是否链接成功
+	3.设置字符集
+	4.选择数据库
+	5.准备SQL语句
+	6.发送SQL语句
+	7.发送结果集
+	8.释放资源
+	
+	$result = mysqli_query($link,$sql)返回一个对象
+	mysqli_fetch_assoc($result)一个一个往下读，返回的时候一个一维关联数据
+	mysqli_fetch_row($result)返回一个索引数组
+	mysqli_fetch_array($result)返回一个有索引又有关联的数组	
+	mysqli_affected_rows($link)返回你的修改，删除，添加的时候受影响的行数
+	mysqli_num_rows($resule)返回查询时候的结果集的总条数；
+	mysqli_insert_id($link);返回的是你插入的当前的数据的自增的ID；
+	
+	str_shuffle()打乱字符串
+	shuffle()打乱数组
+	range('a','z')a-z数组
+
+	setcookie('name','',time()+60,'/');设置cookie,60秒后销毁，作用与当前目录
+	setcookie('name','',time()-1,'/');销毁cookie
+	cookie存在客户端
+	session存在服务端
+	session_start（）;开启session
+	session_destroy（）;销毁session
+	$_SESSION['name']=''
+	$_SESSION[] 取值；
+	gd库
+	1.创建画布$im = @imagecreatetruecolor(120, 20)
+	2.创建颜色$text_color = imagecolorallocate($im, 233, 14, 91);//0-255值越小颜色越深
+	3.用gd库函数去画画
+	4.告诉浏览器你的minme类型
+	5.输出到浏览器或者可以存放到你的本地
+	6.销毁资源
