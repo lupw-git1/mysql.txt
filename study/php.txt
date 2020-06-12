@@ -77,4 +77,53 @@
 	$_FILES[]查看上传图片
 
 正则
+
+
+面对对象
+	class PerSon {
+		public $age; 
+		public function __construct ($name ,$age ,$height,$weight ){
+			
+			parebt::__construct($name,$age);
+			$this->height=$height;
+			$this->weight=$weight;
+		public $function(){
+			echo '我在吃饭'
+		}
+	}
+	继承 class child extends Person
+	访问权限
 	
+	public 公共
+	protected 受保护 可以被子类继承
+	private 私有
+
+	final：修饰class ，代表这个类不能被继承
+	final：修饰method，代表这个方法不能被重写
+	
+	
+重写：	重新写个一样的（完全重写） 
+	写parent::work()
+	属性也一样放大
+	重写后权限只能
+	
+
+魔术方法：系统在特定时机调用的方法
+
+	__get()触发时机：对象在外部访问私有成员或者受保护的属性是触发
+	该方法有一个参数，参数就是属性名
+
+	__set 触发时机：对象在外部设置私有或者受保护成员属性值的时候调用该方法有两个参数
+	参数1：成员属性名
+	参数2：要设置的值
+	__unset 
+	__call 当调用不存在的属性是触发
+
+	const  pi=3.14
+	类外部 类名::pi
+	内部 self：：pi
+
+	静态属性和方法
+	static public 
+	外部访问 对象名：：对象属性
+	内部 self ：：静态方法名
