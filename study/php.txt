@@ -127,3 +127,25 @@
 	static public 
 	外部访问 对象名：：对象属性
 	内部 self ：：静态方法名
+
+trait 模拟实现多继承  PHP中是单继承  class改成trait  
+不加属性，不可实例化
+
+	方法名冲突 use dun,rdswors{dun::attack ad dunattck ;dun::attack insteadof sword;
+
+	sword::attack as sattack}
+命名空间 namespace hello 
+		clas person
+	namespace world 
+		clas person
+根空间  \hello 子空间 \hello\test
+
+异常处理 
+
+pdo 不同的数据库用到的扩展库不一样，PDO
+	exec 执行不要结果集的语句 比如 增删改
+	query 执行要结果集的语句 比如查 desc
+	lastInsertId 最后插入语句的ID
+事务处理 事务：多条mysql语句当成整体，一条错误全部错误，比如银行转账
+$pdo->beginTransaction()
+
